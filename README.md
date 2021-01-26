@@ -1,2 +1,2 @@
 # SwiftUIDragGesture
-SwiftUI Drag Gesture
+SwiftUI Drag Gesture sample tutorial.
