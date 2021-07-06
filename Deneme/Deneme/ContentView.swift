@@ -51,14 +51,16 @@ struct ContentView: View {
                     self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
                         
                     self.isDragging = true
+                    self.color = .green
                         
                }
                    .onEnded { value in
                        self.currentPosition = CGSize(width: value.translation.width + self.newPosition.width, height: value.translation.height + self.newPosition.height)
-                    self.color = .green
+                    self.color = .red
                     self.isDragging = false
                        print(self.newPosition.width)
                        self.newPosition = self.currentPosition
+                    self.isDragging = false
                    }
            )
            
